@@ -30,27 +30,41 @@ p {
 
 a {
   text-decoration: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
 }
 
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  /* display: flex; */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
 /*<!--ШАПКА-------------------------------------------->*/
 
 .header {
+  display: flex;
+  height: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-conteiner {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  height: 80px;
 }
 
 .logo {
-  margin-left: 215px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -58,7 +72,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-black);
-  margin-right: 93px;
 }
 
 .logo-item {
@@ -68,6 +81,8 @@ img {
 .nav-list {
   display: flex;
   gap: 50px;
+  padding-left: 93px;
+
 }
 
 .nav-list-item {
@@ -81,20 +96,26 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
 .nav-list-item a:hover {
   color: var(--accent-color);
 }
 
+.contacts {
+  /* margin-left: auto; */
+}
+
 .contact-list {
   display: flex;
   margin-left: auto;
-  padding-right: 215px;
   gap: 50px;
 }
 
 .contact-list .contacts {
+  justify-content: end;
   list-style: none;
   font-style: normal;
   font-weight: 500;
@@ -120,11 +141,12 @@ img {
 
 .hero {
   background: var(--secondary-bg-color);
-  height: 600px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .main-text {
-  padding-top: 200px;
+
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -166,30 +188,31 @@ img {
 
 .about {
   display: block;
-  margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .about-list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
 }
+
 .about-tittle {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  opacity: 0;
+  height: 0px;
 }
+
 .about .list {
   width: 270px;
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
   align-items: top;
   gap: 30px;
 }
 
 .about-sub-tittle {
-  margin-top: 94px;
   margin-bottom: 10px;
   width: 270px;
   font-style: normal;
@@ -210,14 +233,10 @@ img {
 }
 
 /*<!--Чим ми займаємося-------------------------------------------->*/
-.work {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
+.work {}
+
 .work-tittle {
   text-align: center;
-  margin-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -225,12 +244,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-.work .container {
-}
+
+
+
 .work-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .work-list-item {
@@ -257,9 +275,8 @@ img {
 }
 
 .team-sub-tittle {
-  padding-top: 30px;
-  padding-bottom: 10px;
   text-align: center;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -271,7 +288,6 @@ img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
   gap: 30px;
   padding-bottom: 94px;
 }
@@ -286,7 +302,12 @@ img {
 
 .team-text {
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-work {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -296,17 +317,12 @@ img {
 /* -------------FOOTER */
 .footer {
   display: block;
-  background: var(--secondary-bg-color);
-}
-.footer .container {
-  display: block;
-  margin-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--secondary-bg-color);
 }
 
 .footer-text {
-  margin-left: 215px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -315,7 +331,7 @@ img {
 
 .footer .contacts {
   display: block;
-  margin-left: 215px;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -332,28 +348,41 @@ img {
 }
 
 .footer .logo {
+  display: block;
+  padding-bottom: 20px;
   color: var(--secondary-color);
+  cursor: default;
 }
 
 /*-------------------PORTFOLIO------------------*/
 
+.decor-line {
+  height: 1px;
+  background-color: #ECECEC;
+}
+
 .portfolio .tittle {
   text-align: center;
+  opacity: 0;
+  height: 0px;
 }
+
 .portfolio {
-  /* display: flex; */
+  padding-bottom: 94px;
 }
 
 .portfolio ul {
   list-style: none;
 }
+
 .pf-btn {
   display: flex;
   margin-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
 }
+
 .portfolio-btn {
   padding: 6px 25px;
   font-family: "Roboto";
@@ -363,25 +392,27 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
   border: transparent;
+}
+
+.portfolio-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.portfolio-btn:hover {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-}
-
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio .sub-tittle {
-  padding-top: 20px;
-  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -390,7 +421,6 @@ img {
 }
 
 .portfolio .text {
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -402,6 +432,15 @@ img {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
   gap: 30px;
+}
+
+.pf-card {
+  border: 1px #eeeeee;
+  padding: 20px 24px;
+}
+
+.pf-cards {
+  width: 370px;
+  border: 1px solid #EEEEEE;
 }
