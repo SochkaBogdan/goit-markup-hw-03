@@ -109,6 +109,7 @@ img {
 }
 
 .contact-list {
+  align-items: center;
   display: flex;
   margin-left: auto;
   gap: 50px;
@@ -188,14 +189,12 @@ img {
 
 .about {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .about-tittle {
@@ -204,10 +203,10 @@ img {
 }
 
 .about .list {
-  width: 270px;
+  /* width: 270px; */
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px; */
+  /* padding-bottom: 94px; */
   align-items: top;
   gap: 30px;
 }
@@ -233,7 +232,9 @@ img {
 }
 
 /*<!--Чим ми займаємося-------------------------------------------->*/
-.work {}
+.work {
+  padding-bottom: 94px;
+}
 
 .work-tittle {
   text-align: center;
@@ -249,23 +250,21 @@ img {
 
 .work-list {
   display: flex;
+  gap: 30px;
 }
 
-.work-list-item {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
-}
+.work-list-item {}
 
 /*<!--Наша команда-------------------------------------------->*/
 
 .team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-tittle {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -286,10 +285,7 @@ img {
 
 .team-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .team-list-item {
@@ -327,16 +323,21 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .footer .contacts {
   display: block;
   margin-bottom: 9px;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  cursor: default;
+  /* cursor: default; */
+}
+.footer .contacts:first-child{
+  color: var(--secondary-color);
 }
 
 .footer .contacts:hover {
@@ -351,7 +352,7 @@ img {
   display: block;
   padding-bottom: 20px;
   color: var(--secondary-color);
-  cursor: default;
+  /* cursor: default; */
 }
 
 /*-------------------PORTFOLIO------------------*/
@@ -369,6 +370,7 @@ img {
 
 .portfolio {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .portfolio ul {
@@ -376,8 +378,8 @@ img {
 }
 
 .pf-btn {
+  margin: 0px;
   display: flex;
-  margin-top: 94px;
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
@@ -428,10 +430,9 @@ img {
 }
 
 .portfolio-list {
+  margin: 0px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   gap: 30px;
 }
 
