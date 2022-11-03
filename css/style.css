@@ -42,7 +42,6 @@ img {
 .container {
   width: 1200px;
   padding: 0px 15px;
-  /* display: flex; */
   margin-left: auto;
   margin-right: auto;
 
@@ -53,10 +52,14 @@ img {
 /*<!--ШАПКА-------------------------------------------->*/
 
 .header {
-  display: flex;
-  height: 80px;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
 }
 
 .header-conteiner {
@@ -79,6 +82,7 @@ img {
 }
 
 .nav-list {
+  margin: 0px;
   display: flex;
   gap: 50px;
   padding-left: 93px;
@@ -105,7 +109,6 @@ img {
 }
 
 .contacts {
-  /* margin-left: auto; */
 }
 
 .contact-list {
@@ -192,7 +195,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.about-content{
 
+}
 .about-list {
   display: flex;
 }
@@ -203,10 +208,7 @@ img {
 }
 
 .about .list {
-  /* width: 270px; */
   display: flex;
-  /* padding-top: 94px; */
-  /* padding-bottom: 94px; */
   align-items: top;
   gap: 30px;
 }
@@ -358,9 +360,9 @@ img {
 
 /*-------------------PORTFOLIO------------------*/
 
-.decor-line {
-  height: 1px;
-  background-color: #ECECEC;
+.pf-content {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .portfolio .tittle {
@@ -369,10 +371,7 @@ img {
   height: 0px;
 }
 
-.portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+.portfolio {}
 
 .portfolio ul {
   list-style: none;
@@ -380,6 +379,7 @@ img {
 
 .pf-btn {
   margin: 0px;
+  padding: 0px;
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
