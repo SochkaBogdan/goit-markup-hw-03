@@ -68,6 +68,7 @@ img {
 }
 
 .logo {
+  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -82,10 +83,10 @@ img {
 }
 
 .nav-list {
+  padding: 0px;
   margin: 0px;
   display: flex;
   gap: 50px;
-  padding-left: 93px;
 
 }
 
@@ -108,8 +109,7 @@ img {
   color: var(--accent-color);
 }
 
-.contacts {
-}
+.contacts {}
 
 .contact-list {
   align-items: center;
@@ -195,9 +195,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.about-content{
 
-}
+.about-content {}
+
 .about-list {
   display: flex;
 }
@@ -336,7 +336,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  /* cursor: default; */
 }
 
 .footer .contacts:first-child {
@@ -355,15 +354,11 @@ img {
   display: block;
   padding-bottom: 20px;
   color: var(--secondary-color);
-  /* cursor: default; */
 }
 
 /*-------------------PORTFOLIO------------------*/
 
-.pf-content {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+.pf-content {}
 
 .portfolio .tittle {
   text-align: center;
@@ -371,7 +366,11 @@ img {
   height: 0px;
 }
 
-.portfolio {}
+.portfolio {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+}
 
 .portfolio ul {
   list-style: none;
@@ -432,6 +431,8 @@ img {
 
 .portfolio-list {
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
